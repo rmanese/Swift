@@ -24,10 +24,10 @@ class PopupViewController: UIViewController {
         
         if userInput != nil {
             delegate?.popupSelectedValue(value: userInput!)
+            dismiss(animated: true)
         }
-        
-        dismiss(animated: true)
     }
+
     
 
 
