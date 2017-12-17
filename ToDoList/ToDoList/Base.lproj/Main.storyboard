@@ -24,7 +24,11 @@
                                 <items>
                                     <navigationItem title="Title" id="uA8-5L-rGG">
                                         <barButtonItem key="leftBarButtonItem" systemItem="add" id="XRA-Rm-TCS"/>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="mp4-ZX-BWf"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="mp4-ZX-BWf">
+                                            <connections>
+                                                <action selector="editButtonTapped:" destination="BYZ-38-t0r" id="EUZ-U2-NkY"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -38,6 +42,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="addButtonTapped" destination="XRA-Rm-TCS" id="k1C-TG-b36"/>
                         <outlet property="tableView" destination="eSL-Pg-0Uz" id="jFz-um-hnz"/>
                     </connections>
                 </viewController>

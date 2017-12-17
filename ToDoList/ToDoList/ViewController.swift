@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var toDoList = ["sleep", "eat"]
+    var toDoList = ["sleep", "eat", "code"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +22,12 @@ class ViewController: UIViewController {
         
     }
 
+    @IBAction func editButtonTapped(_ sender: Any) {
+        tableView.isEditing = !tableView.isEditing
+    }
+    
+    @IBOutlet weak var addButtonTapped: UIBarButtonItem!
+    
     
     
 }
@@ -36,6 +42,26 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
         cell.textLabel?.text = toDoList[indexPath.row]
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        let selectedItem = toDoList[sourceIndexPath.row]
+        toDoList.remove(at: sourceIndexPath.row)
+        toDoList.insert(selectedItem, at: destinationIndexPath.row)
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            toDoList.remove(at: indexPath.row)
+            
+            tableView.beginUpdates()
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+            tableView.endUpdates()
+        }
     }
     
     
