@@ -22,11 +22,16 @@ class ViewController: UIViewController {
         
     }
 
-    @IBAction func editButtonTapped(_ sender: Any) {
+    @IBAction func editButtonTapped(_ sender: UIBarButtonItem) {
         tableView.isEditing = !tableView.isEditing
     }
     
-    @IBOutlet weak var addButtonTapped: UIBarButtonItem!
+    @IBAction func addButtonTapped(_ sender: UIBarButtonItem) {
+        let sb = UIStoryboard(name: "Popup", bundle: nil)
+        let popup = sb.instantiateInitialViewController() as! PopupViewController
+        popup.delegate = self
+        present(popup, animated: true)
+    }
     
     
     
@@ -62,6 +67,15 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             tableView.deleteRows(at: [indexPath], with: .automatic)
             tableView.endUpdates()
         }
+    }
+
+}
+
+extension ViewController: PopupDelegate {
+    func popupSelectedValue(value: String) {
+        toDoList.append(value)
+        
+        tableView.reloadData()
     }
     
     
