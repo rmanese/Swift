@@ -9,5 +9,5 @@
 import Foundation
 
 extension Notification.Name {
-    static let saveDate = Notification.Name(r awValue: "saveDate")
+    static let saveDateTime = Notification.Name(rawValue: "saveDate")
 }

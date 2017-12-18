@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ReuablePopupViewController: UIViewController {
+class ReusablePopupViewController: UIViewController {
 
     @IBOutlet weak var datePicker: UIDatePicker!
     

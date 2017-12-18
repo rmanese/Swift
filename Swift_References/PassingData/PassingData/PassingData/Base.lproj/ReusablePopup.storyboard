@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Reuable Popup View Controller-->
+        <!--Reusable Popup View Controller-->
         <scene sceneID="6jG-ai-5sz">
             <objects>
-                <viewController modalPresentationStyle="overCurrentContext" id="IhE-W7-vVj" customClass="ReuablePopupViewController" customModule="PassingData" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="overCurrentContext" id="IhE-W7-vVj" customClass="ReusablePopupViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7cj-9h-6Bt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
