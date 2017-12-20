@@ -69,15 +69,15 @@
 			isa = PBXGroup;
 			children = (
 				D297352C1FE73B1C00A53585 /* AppDelegate.swift */,
-				D29735321FE73B1C00A53585 /* Main.storyboard */,
 				D2354F221FEA991A007CBA16 /* DelegateStoryboard.storyboard */,
 				D2354F241FEA995E007CBA16 /* DelegateViewController.swift */,
+				D29735321FE73B1C00A53585 /* Main.storyboard */,
 				D24C91D31FEAF16B0090E4B4 /* PopupDelegate.swift */,
 				D218522D1FE9AE9000ADD270 /* NotificationCenterViewController.swift */,
 				D218522F1FE9B0E800ADD270 /* CallbackViewController.swift */,
 				D21852311FE9B17F00ADD270 /* ReusablePopupStoryboard.storyboard */,
-				D21852351FE9E67300ADD270 /* ExtensionNotificationName.swift */,
 				D21852331FE9B19C00ADD270 /* ReusablePopupViewController.swift */,
+				D21852351FE9E67300ADD270 /* ExtensionNotificationName.swift */,
 				D29735351FE73B1C00A53585 /* Assets.xcassets */,
 				D29735371FE73B1C00A53585 /* LaunchScreen.storyboard */,
 				D297353A1FE73B1C00A53585 /* Info.plist */,

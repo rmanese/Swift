@@ -28,9 +28,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYR-Me-1ey">
-                                <rect key="frame" x="167" y="353" width="80" height="30"/>
+                                <rect key="frame" x="144" y="353" width="126" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Select Date"/>
+                                <state key="normal" title="NotificationCenter"/>
                                 <connections>
                                     <action selector="selectDate_buttonTapped" destination="9pv-A4-QxB" eventType="touchUpInside" id="2ga-ti-4Pi"/>
                                     <segue destination="1qy-Oh-Jbb" kind="presentation" identifier="toPopupSegue" id="cNY-wB-kn1"/>
@@ -82,9 +82,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Lq-2I-pv2">
-                                <rect key="frame" x="167" y="353" width="80" height="30"/>
+                                <rect key="frame" x="174" y="353" width="67" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Select Date"/>
+                                <state key="normal" title="Callbacks"/>
                                 <connections>
                                     <action selector="selectDate_buttonTapped:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="vxS-Ck-Mgt"/>
                                     <segue destination="1qy-Oh-Jbb" kind="presentation" identifier="toPopupSegue2" id="yzT-23-sG5"/>
