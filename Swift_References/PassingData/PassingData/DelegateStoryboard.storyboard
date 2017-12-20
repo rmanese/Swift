@@ -26,19 +26,29 @@
                                     <action selector="selectDate_buttonTapped" destination="iYM-Ks-x1l" eventType="touchUpInside" id="bfq-lx-iVW"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zaB-9h-3lU">
-                                <rect key="frame" x="166" y="20" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zaB-9h-3lU">
+                                <rect key="frame" x="0.0" y="20" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="MOD-h3-kRt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zaB-9h-3lU" firstAttribute="top" secondItem="Sxx-FH-SS6" secondAttribute="top" id="41k-xI-Nkx"/>
+                            <constraint firstItem="zaB-9h-3lU" firstAttribute="leading" secondItem="Sxx-FH-SS6" secondAttribute="leading" id="dhb-NF-F31"/>
+                            <constraint firstItem="Sxx-FH-SS6" firstAttribute="trailing" secondItem="zaB-9h-3lU" secondAttribute="trailing" id="l8X-kf-Qci"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Sxx-FH-SS6"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="contacts" id="h3G-aI-cSN"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="date_lbl" destination="zaB-9h-3lU" id="6Mc-ud-5gg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uUh-1J-ic5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

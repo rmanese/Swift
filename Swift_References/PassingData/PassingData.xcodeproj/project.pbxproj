@@ -14,6 +14,7 @@
 		D21852361FE9E67300ADD270 /* ExtensionNotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21852351FE9E67300ADD270 /* ExtensionNotificationName.swift */; };
 		D2354F231FEA991A007CBA16 /* DelegateStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2354F221FEA991A007CBA16 /* DelegateStoryboard.storyboard */; };
 		D2354F251FEA995E007CBA16 /* DelegateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2354F241FEA995E007CBA16 /* DelegateViewController.swift */; };
+		D24C91D41FEAF16B0090E4B4 /* PopupDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24C91D31FEAF16B0090E4B4 /* PopupDelegate.swift */; };
 		D297352D1FE73B1C00A53585 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D297352C1FE73B1C00A53585 /* AppDelegate.swift */; };
 		D29735341FE73B1C00A53585 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D29735321FE73B1C00A53585 /* Main.storyboard */; };
 		D29735361FE73B1C00A53585 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D29735351FE73B1C00A53585 /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 		D21852351FE9E67300ADD270 /* ExtensionNotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionNotificationName.swift; sourceTree = "<group>"; };
 		D2354F221FEA991A007CBA16 /* DelegateStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DelegateStoryboard.storyboard; sourceTree = "<group>"; };
 		D2354F241FEA995E007CBA16 /* DelegateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateViewController.swift; sourceTree = "<group>"; };
+		D24C91D31FEAF16B0090E4B4 /* PopupDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupDelegate.swift; sourceTree = "<group>"; };
 		D29735291FE73B1C00A53585 /* PassingData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PassingData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D297352C1FE73B1C00A53585 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D29735331FE73B1C00A53585 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				D29735321FE73B1C00A53585 /* Main.storyboard */,
 				D2354F221FEA991A007CBA16 /* DelegateStoryboard.storyboard */,
 				D2354F241FEA995E007CBA16 /* DelegateViewController.swift */,
+				D24C91D31FEAF16B0090E4B4 /* PopupDelegate.swift */,
 				D218522D1FE9AE9000ADD270 /* NotificationCenterViewController.swift */,
 				D218522F1FE9B0E800ADD270 /* CallbackViewController.swift */,
 				D21852311FE9B17F00ADD270 /* ReusablePopupStoryboard.storyboard */,
@@ -156,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D24C91D41FEAF16B0090E4B4 /* PopupDelegate.swift in Sources */,
 				D218522E1FE9AE9000ADD270 /* NotificationCenterViewController.swift in Sources */,
 				D21852301FE9B0E800ADD270 /* CallbackViewController.swift in Sources */,
 				D21852341FE9B19C00ADD270 /* ReusablePopupViewController.swift in Sources */,

@@ -11,6 +11,8 @@ import UIKit
 class ReusablePopupViewController: UIViewController {
 
     @IBOutlet weak var datePicker: UIDatePicker!
+    
+    var delegate: PopupDelegate?
     var onSave: ((_ data: String) -> ())?
     
     var formattedDate: String {
@@ -27,7 +29,10 @@ class ReusablePopupViewController: UIViewController {
     
     @IBAction func submit_buttonTapped() {
         NotificationCenter.default.post(name: .saveDate, object: self)
+        
         onSave?(formattedDate)
+        
+        delegate?.popupValueSelected(value: formattedDate)
         
         dismiss(animated: true)
     }
