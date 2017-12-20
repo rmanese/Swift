@@ -13,7 +13,6 @@
         <!--First-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
                 <viewController id="9pv-A4-QxB" customClass="NotificationCenterViewController" customModule="PassingData" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cY0-z0-81n">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
@@ -33,7 +32,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Select Date"/>
                                 <connections>
-                                    <action selector="selectDate_buttonTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="nUb-j9-rez"/>
+                                    <action selector="selectDate_buttonTapped" destination="9pv-A4-QxB" eventType="touchUpInside" id="2ga-ti-4Pi"/>
+                                    <segue destination="1qy-Oh-Jbb" kind="presentation" identifier="toPopupSegue" id="cNY-wB-kn1"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -47,17 +47,17 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
                     <connections>
-                        <outlet property="dateLabel" destination="oNW-Tu-gi7" id="jwi-4K-UNy"/>
+                        <outlet property="date_lbl" destination="oNW-Tu-gi7" id="0kx-50-n1b"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="-320"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="PassingData" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="CallbackViewController" customModule="PassingData" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -76,7 +76,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Select Date"/>
                                 <connections>
-                                    <segue destination="Ptd-bv-VCT" kind="presentation" id="Crs-ED-tqW"/>
+                                    <action selector="selectDate_buttonTapped:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="vxS-Ck-Mgt"/>
+                                    <segue destination="1qy-Oh-Jbb" kind="presentation" identifier="toPopupSegue2" id="yzT-23-sG5"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -89,17 +90,21 @@
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="date_lbl" destination="dnQ-Jc-Mcr" id="VU5-Pv-79X"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="360"/>
         </scene>
-        <!--ReusablePopup-->
-        <scene sceneID="d7J-0J-7kJ">
+        <!--ReusablePopupStoryboard-->
+        <scene sceneID="s0T-cj-wkj">
             <objects>
-                <viewControllerPlaceholder storyboardName="ReusablePopup" id="Ptd-bv-VCT" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ESr-x7-lV9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="ReusablePopupStoryboard" id="1qy-Oh-Jbb" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4pQ-tb-eE5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1528" y="0.0"/>
+            <point key="canvasLocation" x="1363" y="0.0"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -124,4 +129,7 @@
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="yzT-23-sG5"/>
+    </inferredMetricsTieBreakers>
 </document>

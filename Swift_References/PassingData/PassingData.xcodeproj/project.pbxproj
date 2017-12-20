@@ -7,29 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D218522E1FE9AE9000ADD270 /* NotificationCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D218522D1FE9AE9000ADD270 /* NotificationCenterViewController.swift */; };
+		D21852301FE9B0E800ADD270 /* CallbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D218522F1FE9B0E800ADD270 /* CallbackViewController.swift */; };
+		D21852321FE9B17F00ADD270 /* ReusablePopupStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D21852311FE9B17F00ADD270 /* ReusablePopupStoryboard.storyboard */; };
+		D21852341FE9B19C00ADD270 /* ReusablePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21852331FE9B19C00ADD270 /* ReusablePopupViewController.swift */; };
+		D21852361FE9E67300ADD270 /* ExtensionNotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21852351FE9E67300ADD270 /* ExtensionNotificationName.swift */; };
 		D297352D1FE73B1C00A53585 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D297352C1FE73B1C00A53585 /* AppDelegate.swift */; };
-		D297352F1FE73B1C00A53585 /* NotificationCenterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D297352E1FE73B1C00A53585 /* NotificationCenterVC.swift */; };
-		D29735311FE73B1C00A53585 /* CallbacksVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29735301FE73B1C00A53585 /* CallbacksVC.swift */; };
 		D29735341FE73B1C00A53585 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D29735321FE73B1C00A53585 /* Main.storyboard */; };
 		D29735361FE73B1C00A53585 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D29735351FE73B1C00A53585 /* Assets.xcassets */; };
 		D29735391FE73B1C00A53585 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D29735371FE73B1C00A53585 /* LaunchScreen.storyboard */; };
-		D29735421FE73C2300A53585 /* ReusablePopup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D29735401FE73C2300A53585 /* ReusablePopup.storyboard */; };
-		D29735441FE73DE700A53585 /* ReuablePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29735431FE73DE700A53585 /* ReuablePopupViewController.swift */; };
-		D29735461FE73FAF00A53585 /* NotificationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29735451FE73FAF00A53585 /* NotificationExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D218522D1FE9AE9000ADD270 /* NotificationCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterViewController.swift; sourceTree = "<group>"; };
+		D218522F1FE9B0E800ADD270 /* CallbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallbackViewController.swift; sourceTree = "<group>"; };
+		D21852311FE9B17F00ADD270 /* ReusablePopupStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ReusablePopupStoryboard.storyboard; sourceTree = "<group>"; };
+		D21852331FE9B19C00ADD270 /* ReusablePopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusablePopupViewController.swift; sourceTree = "<group>"; };
+		D21852351FE9E67300ADD270 /* ExtensionNotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionNotificationName.swift; sourceTree = "<group>"; };
 		D29735291FE73B1C00A53585 /* PassingData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PassingData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D297352C1FE73B1C00A53585 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D297352E1FE73B1C00A53585 /* NotificationCenterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterVC.swift; sourceTree = "<group>"; };
-		D29735301FE73B1C00A53585 /* CallbacksVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallbacksVC.swift; sourceTree = "<group>"; };
 		D29735331FE73B1C00A53585 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D29735351FE73B1C00A53585 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D29735381FE73B1C00A53585 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D297353A1FE73B1C00A53585 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D29735411FE73C2300A53585 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = PassingData/Base.lproj/ReusablePopup.storyboard; sourceTree = "<group>"; };
-		D29735431FE73DE700A53585 /* ReuablePopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuablePopupViewController.swift; sourceTree = "<group>"; };
-		D29735451FE73FAF00A53585 /* NotificationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,12 +63,12 @@
 			isa = PBXGroup;
 			children = (
 				D297352C1FE73B1C00A53585 /* AppDelegate.swift */,
-				D297352E1FE73B1C00A53585 /* NotificationCenterVC.swift */,
-				D29735301FE73B1C00A53585 /* CallbacksVC.swift */,
 				D29735321FE73B1C00A53585 /* Main.storyboard */,
-				D29735401FE73C2300A53585 /* ReusablePopup.storyboard */,
-				D29735451FE73FAF00A53585 /* NotificationExtension.swift */,
-				D29735431FE73DE700A53585 /* ReuablePopupViewController.swift */,
+				D218522D1FE9AE9000ADD270 /* NotificationCenterViewController.swift */,
+				D218522F1FE9B0E800ADD270 /* CallbackViewController.swift */,
+				D21852311FE9B17F00ADD270 /* ReusablePopupStoryboard.storyboard */,
+				D21852351FE9E67300ADD270 /* ExtensionNotificationName.swift */,
+				D21852331FE9B19C00ADD270 /* ReusablePopupViewController.swift */,
 				D29735351FE73B1C00A53585 /* Assets.xcassets */,
 				D29735371FE73B1C00A53585 /* LaunchScreen.storyboard */,
 				D297353A1FE73B1C00A53585 /* Info.plist */,
@@ -136,8 +136,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D29735391FE73B1C00A53585 /* LaunchScreen.storyboard in Resources */,
+				D21852321FE9B17F00ADD270 /* ReusablePopupStoryboard.storyboard in Resources */,
 				D29735361FE73B1C00A53585 /* Assets.xcassets in Resources */,
-				D29735421FE73C2300A53585 /* ReusablePopup.storyboard in Resources */,
 				D29735341FE73B1C00A53585 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,11 +149,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D29735461FE73FAF00A53585 /* NotificationExtension.swift in Sources */,
-				D29735441FE73DE700A53585 /* ReuablePopupViewController.swift in Sources */,
-				D29735311FE73B1C00A53585 /* CallbacksVC.swift in Sources */,
+				D218522E1FE9AE9000ADD270 /* NotificationCenterViewController.swift in Sources */,
+				D21852301FE9B0E800ADD270 /* CallbackViewController.swift in Sources */,
+				D21852341FE9B19C00ADD270 /* ReusablePopupViewController.swift in Sources */,
 				D297352D1FE73B1C00A53585 /* AppDelegate.swift in Sources */,
-				D297352F1FE73B1C00A53585 /* NotificationCenterVC.swift in Sources */,
+				D21852361FE9E67300ADD270 /* ExtensionNotificationName.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,14 +174,6 @@
 				D29735381FE73B1C00A53585 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		D29735401FE73C2300A53585 /* ReusablePopup.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D29735411FE73C2300A53585 /* Base */,
-			);
-			name = ReusablePopup.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

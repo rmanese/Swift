@@ -1,8 +1,8 @@
 //
-//  ReuablePopupViewController.swift
+//  ReusablePopupViewController.swift
 //  PassingData
 //
-//  Created by Roberto Manese III on 12/17/17.
+//  Created by Roberto Manese III on 12/19/17.
 //  Copyright © 2017 maobaoCoder. All rights reserved.
 //
 
@@ -11,6 +11,7 @@ import UIKit
 class ReusablePopupViewController: UIViewController {
 
     @IBOutlet weak var datePicker: UIDatePicker!
+    var onSave: ((_ data: String) -> ())?
     
     var formattedDate: String {
         let formatter = DateFormatter()
@@ -23,12 +24,12 @@ class ReusablePopupViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-
-    @IBAction func select_buttonTapped(_ sender: UIButton) {
+    
+    @IBAction func submit_buttonTapped() {
         NotificationCenter.default.post(name: .saveDate, object: self)
+        onSave?(formattedDate)
         
         dismiss(animated: true)
     }
-    
     
 }
