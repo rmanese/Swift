@@ -1,10 +1,9 @@
-Dice Rolling app
-
-Roll a random number from 2-12
+Basic dice rolling app
 
 Notes:
-A lot of messed up logic determining if win or lose
-Work on a better UI
+Logic of W/L is not stable
+Work on UI
 
 Future:
-Going to switch this app to the game of craps with betting
+Going to turn it into the game of craps
+Betting, more rules implemented that just 7/11
