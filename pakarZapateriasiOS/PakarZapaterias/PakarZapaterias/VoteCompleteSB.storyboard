@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Rtk-gm-Tro">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Vote Complete View Controller-->
+        <scene sceneID="JmZ-QN-z86">
+            <objects>
+                <viewController id="Rtk-gm-Tro" customClass="VoteCompleteViewController" customModule="PakarZapaterias" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ArU-2H-TU4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RLF-bz-png">
+                                <rect key="frame" x="62" y="208" width="250" height="250"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MqG-QC-vGw">
+                                        <rect key="frame" x="75" y="212" width="100" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Close App"/>
+                                        <connections>
+                                            <action selector="closeButtonTapped" destination="Rtk-gm-Tro" eventType="touchUpInside" id="YaD-eQ-vSX"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bn2-Xf-fj9">
+                                        <rect key="frame" x="8" y="8" width="234" height="123"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Voting is now over. You completed: 32.8%">
+                                                <attributes>
+                                                    <font key="NSFont" size="26" name=".AppleSystemUIFont"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RLF-bz-png" firstAttribute="centerY" secondItem="ArU-2H-TU4" secondAttribute="centerY" id="1UE-yC-Wue"/>
+                            <constraint firstItem="RLF-bz-png" firstAttribute="centerX" secondItem="ArU-2H-TU4" secondAttribute="centerX" id="EbK-Ij-LBQ"/>
+                            <constraint firstItem="RLF-bz-png" firstAttribute="leading" secondItem="DzB-xw-nRG" secondAttribute="leading" constant="62" id="VGv-ZZ-eWe"/>
+                            <constraint firstItem="RLF-bz-png" firstAttribute="top" secondItem="DzB-xw-nRG" secondAttribute="top" constant="188" id="nTH-cc-Aj7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DzB-xw-nRG"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="meJ-2C-XWZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="107.49625187406298"/>
+        </scene>
+    </scenes>
+</document>
